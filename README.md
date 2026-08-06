@@ -402,4 +402,8 @@ For a college / portfolio project: name the concept honestly as **"mesh-routed d
 
 ## License
 
-Demo code, no license. Use it however you want for learning.
+## License & Author
+
+Architected and developed by **Md Zaid** ([GitHub Profile](https://github.com/Md-Zaid-coder)).
+
+Distributed under the MIT License. See `LICENSE` for details.
