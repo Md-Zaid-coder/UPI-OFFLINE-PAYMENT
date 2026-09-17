@@ -1,5 +1,12 @@
 # UPI Offline Mesh — Demo
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://upi-offline-payment-9mk3.onrender.com/)
+[![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://adoptium.net/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.3.5-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+
+> 🚀 **Live Demo:** [https://upi-offline-payment-9mk3.onrender.com/](https://upi-offline-payment-9mk3.onrender.com/)  
+> *(Hosted on Render free tier. If the service is sleeping, please allow ~30–50s for cold start on first request.)*
+
 A Spring Boot backend that demonstrates **offline UPI payments routed through a Bluetooth-style mesh network**. You're in a basement with zero connectivity. You send your friend ₹500. Your phone encrypts the payment, broadcasts it to nearby phones, and the packet hops device-to-device until *some* phone walks outside, gets 4G, and silently uploads it to this backend. The backend decrypts, deduplicates, and settles.
 
 This repo is the **server side** of that system, plus a software simulator of the mesh so you can demo the whole flow on a single laptop without any real Bluetooth hardware.
@@ -58,9 +65,12 @@ The first run downloads Maven (~10 MB) and all dependencies (~80 MB) — give it
 
 ### Open the dashboard
 
-Once you see `Started UpiMeshApplication in X.XXX seconds`, open:
+**Option 1 — Live Online Demo (No installation needed):**
+- 🌐 **[https://upi-offline-payment-9mk3.onrender.com/](https://upi-offline-payment-9mk3.onrender.com/)**
 
-**http://localhost:8080**
+**Option 2 — Run Locally:**
+Once you see `Started UpiMeshApplication in X.XXX seconds`, open:
+- **http://localhost:8080**
 
 You'll get a dark dashboard with everything you need to drive the demo.
 
